@@ -1,0 +1,13 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Jonas Grimfelt --  Co-Founder & Developer -- @grimen
+    ...
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Modernizr
+    Node.js

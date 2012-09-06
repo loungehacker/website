@@ -1,0 +1,32 @@
+{
+  "name": "loungehackers-website",
+  "description": "The official \"Lounge Hackers\" website.",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./index.js",
+  "engines": {
+    "node": "0.6.x"
+  },
+  "dependencies": {
+    "express": "latest",
+    "connect-gzip": "latest",
+    "stylus": "latest",
+    "jade": "latest",
+    "URIjs": "latest",
+    "colors": "latest",
+    "nodetime": "latest",
+    "connect-alive": "latest"
+  },
+  "devDependencies": {
+    "supervisor": "latest",
+    "node-inspector": "latest",
+    "mocha": "latest",
+    "chai": "latest",
+    "cover": "latest",
+    "diff": "latest"
+  },
+  "scripts": {
+    "start": "node .",
+    "debug": "DEBUG=true supervisor -- --debug ."
+  }
+}
