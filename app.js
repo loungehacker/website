@@ -52,6 +52,8 @@ app.configure('staging', function() {
 
 // Production
 app.configure('production', function() {
+  app.set('view cache', true);
+
   app
     .use(express.logger({format: 'short'}));
 

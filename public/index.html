@@ -21,6 +21,82 @@
   <body>
     <!-- TODO -->
 
+    <!-- BEGIN: TERM -->
+    <div id="terminal" class="termlib"></div>
+
+    <div id="disclamier" class="termlib">
+      <a href="http://masswerk.at/termlib" target="_blank">termlib</a>
+    </div>
+
+    <link rel="stylesheet" href="/stylesheets/termlib.css" class="termlib" />
+    <style type="text/css" class="termlib">
+      body {
+        background: #111;
+        text-shadow: 0 0 5px #35cd10;
+      }
+
+      #terminal {
+        position: absolute;
+        z-index: 1;
+      }
+
+      #disclamier {
+        position: absolute;
+        z-index: 2;
+        left: 20px;
+        bottom: 20px;
+        text-shadow: none;
+        font-family: courier;
+        font-size: 10px;
+        overflow: visible;
+      }
+
+      #disclamier a {
+        color: #222;
+        text-decoration: none;
+      }
+    </style>
+
+    <script type="text/javascript" src="/javascripts/termlib.min.js" class="termlib"></script>
+    <script type="text/javascript" class="termlib">
+      function term_handler() {
+        this.newLine();
+
+        var line = this.lineBuffer;
+
+        if (line !== "") {
+          this.write("  > command not found: " + line);
+        }
+
+        this.prompt();
+      }
+
+      var term = new Terminal({
+        id: 2,
+        x: 0,
+        y: 0,
+        cols: 150,
+        rows: 12,
+        blinkDelay: 500,
+        crsrBlinkMode: true,
+        crsrBlockMode: true,
+        // greeting: '%+r Lounge Hackers %-r\n',
+        greeting: '',
+        handler: term_handler,
+        termDiv: 'terminal',
+        bgColor: '#111',
+        frameWidth: 5,
+        frameColor: '#111',
+        fontClass: 'term',
+        wrapping: true,
+        ps: "  loungehackers ~$",
+        rawMode: false
+      });
+
+      term.open();
+    </script>
+    <!-- END: TERM -->
+
     <!-- Google Analytics -->
     <script type="text/javascript">
       var _gaq = _gaq || [];
