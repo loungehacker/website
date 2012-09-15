@@ -1,13 +1,18 @@
 # humanstxt.org/
-# The humans responsible & technology colophon
+# The humans responsible
 
 # TEAM
 
-    Jonas Grimfelt --  Co-Founder & Developer -- @grimen
+    Jonas Grimfelt
+      Organizer
+      @grimen
+
+    Christian Landgren
+      Co-Organizer
+      @landgren
+
+    Mattias Petter Johansson
+      Co-Organizer
+      @mattiasjer
+
     ...
-
-# TECHNOLOGY COLOPHON
-
-    HTML5, CSS3
-    Modernizr
-    Node.js
